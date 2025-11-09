@@ -36,15 +36,15 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
     if (currentScroll > 50) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+        navbar.style.background = 'rgba(10, 10, 10, 0.95)';
         navbar.style.backdropFilter = 'blur(20px) saturate(180%)';
-        navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)';
-        navbar.style.borderBottom = '1px solid rgba(226, 232, 240, 0.8)';
+        navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.7), 0 2px 4px -1px rgba(0, 0, 0, 0.5)';
+        navbar.style.borderBottom = '1px solid rgba(212, 175, 55, 0.4)';
     } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.8)';
+        navbar.style.background = 'rgba(10, 10, 10, 0.85)';
         navbar.style.backdropFilter = 'blur(20px) saturate(180%)';
-        navbar.style.boxShadow = '0 1px 2px 0 rgba(0, 0, 0, 0.05)';
-        navbar.style.borderBottom = '1px solid rgba(226, 232, 240, 0.5)';
+        navbar.style.boxShadow = '0 1px 2px 0 rgba(0, 0, 0, 0.5)';
+        navbar.style.borderBottom = '1px solid rgba(212, 175, 55, 0.3)';
     }
     
     lastScroll = currentScroll;
