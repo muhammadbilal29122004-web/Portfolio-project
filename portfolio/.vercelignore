@@ -1,0 +1,11 @@
+# Ignore server-side files so Vercel deploys as static site
+server.js
+package.json
+package-lock.json
+node_modules
+.env
+.env.local
+.env.production
+README.md
+SETUP.md
+

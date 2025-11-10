@@ -1,11 +1,7 @@
 {
   "version": 2,
-  "routes": [
-    { "src": "/styles.css", "dest": "/styles.css" },
-    { "src": "/script.js", "dest": "/script.js" },
-    { "src": "/favicon.ico", "dest": "/favicon.ico" },
-    { "src": "/(.*)", "dest": "/index.html" }
-  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/styles.css",
@@ -21,6 +17,9 @@
         { "key": "Content-Type", "value": "application/javascript; charset=utf-8" }
       ]
     }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
 
